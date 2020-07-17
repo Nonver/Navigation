@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/new.css" />
+		<title>购物车</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12" style="margin-top: 20px;">
+					<div class="col-lg-3 hang">
+						<div class="col-lg-2">
+							<label>商品类型</label>
+						</div>
+						<div class="col-lg-10">
+							<select class="type form-control">
+								<option value="手机">手机</option>
+								<option value="电脑">电脑</option>
+								<option value="mac">mac</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 hang">
+						<div class="col-lg-2">
+							<label>商品名称</label>
+						</div>
+						<div class="col-lg-10">
+							<input type="text" class="Commodity form-control" />
+						</div>
+					</div>
+					
+					<div class="col-lg-3 hang">
+						<div class="col-lg-2">
+							<label>商品数量</label>
+						</div>
+						<div class="col-lg-10">
+							<input type="text" class="number form-control" />
+						</div>
+					</div>
+
+					<div class="col-lg-3 hang">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-10">
+							<button id="btnTj" class="btn btn-default">提交按钮</button>
+							<button id="prohibit" class="btn btn-default">禁止删除</button>
+						</div>
+					</div>
+					
+					<table class="table table-hover append">
+						<tr>
+							<th>序号</th>
+							<th>商品类型</th>
+							<th>商品名称</th>
+							<th>商品数量</th>
+							<th>删除</th>
+						</tr>
+						<tr class="tt">
+							<td>1</td>
+							<td>手机</td>
+							<td>华为Mate10</td>
+							<td class="sp_btn">
+								<span class="glyphicon glyphicon-chevron-left btnLeft"></span>
+								<span class="shu">20</span>
+								<span class="glyphicon glyphicon-chevron-right btnRight"></span>
+							</td>
+							<td>
+								<button class="btn btn-default del">删除</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/new.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

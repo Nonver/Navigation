@@ -1,0 +1,114 @@
+.hui-slide-menu li {
+	border-bottom: 1px solid #E3E3E3;
+	text-align: center;
+}
+
+.hui-common-title-txt {
+	width: 35%;
+	text-align: center;
+	line-height: 44px;
+	font-size: 16px;
+	color: #3388FF;
+	font-family: 微软细黑;
+	font-size: 20px;
+}
+
+
+
+.imgTop {
+	border-radius: 50%;
+	width: 115px;
+	margin-top: 20px;
+	border: 2px solid #3388FF;
+}
+
+.Name {
+	font-size: 25px;
+	font-family: cursive;
+	margin-top: 5px;
+}
+
+.bgGreen {
+	height: 40px;
+	line-height: 40px;
+	margin: 18px 0px;
+}
+
+.bgGreen p {
+	width: 100%;
+	text-align: center;
+	margin-right: 44px;
+	font-size: 18px;
+	font-family: cursive;
+}
+
+.bgGreen p a {
+	cursor: pointer;
+}
+
+.liHe {
+	height: 88px;
+	line-height: 88px;
+}
+
+
+.em {
+	position: relative;
+	top: -170px;
+	left: 80px;
+	height: 12px;
+	display: inline-block;
+	line-height: 12px;
+	font-size: 12px;
+	padding: 2px 7px;
+	border-radius: 8px;
+	color: #fff;
+	background: #ccc;
+	overflow: hidden;
+}
+
+/* 社区 */
+.hui-accordion-title {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 16px;
+	background: #FFFFFF;
+	padding: 0px 10px;
+	box-sizing: border-box;
+	font-weight: 400;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.demo {
+	width: 100%;
+	height: 80px;
+	color: #FFF;
+	line-height: 80px;
+	font-size: 22px;
+	margin: 5px;
+}
+
+.demo2 {
+	height: 80px;
+	text-align: left;
+	color: #FFF;
+	line-height: 80px;
+	font-size: 22px;
+	margin: 5px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.icoImg {
+	width: 60px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.fonPteer{
+	position: relative;
+    top: -105px;
+    left: 90px;
+    font-size: 18px;
+    font-family: cursive;
+}

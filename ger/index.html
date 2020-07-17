@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="author" content="魏远道">
+	<meta name="author" content="作者 97470564">
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<div class="coner">
+		<div class="red">
+			<div class="tou">
+				<img src="logo2.jpg" alt="">
+			</div>
+			<div class="cont">
+				<p class="t">傲雪凌霜</p>
+				<a href="#" class="a">我有一个梦想，想去一个地方</a>
+				<p id=""></p><!--留置-->
+				<div class="cont_1">
+					<ul>
+						<li>
+							
+							<a href="#">论坛首页</a>
+						</li>
+						<li>
+							
+							<a href="#">官方商城</a>
+						</li>
+						<li>
+							
+							<a href="#">客服反馈</a>
+						</li>
+						<li>
+							
+							<a href="#">联系我们</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ann">
+					<a href="#" class="a1">加入我们</a><a href="#" class="a2">关于我们</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open('get', 'https://v1.hitokoto.cn');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      var data = JSON.parse(xhr.responseText);
+      var hitokoto = document.getElementById('hitokoto');
+      hitokoto.innerText = data.hitokoto;
+    }
+  }
+  xhr.send();
+</script>	
+</body>
+</html>

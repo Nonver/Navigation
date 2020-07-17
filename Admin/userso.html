@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<title>添加用户#</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">Amdin 用户管理</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+						<li class="active"><a href="user.html"><span class="glyphicon glyphicon-user"></span>&nbsp;用户管理</a></li>
+						<li><a href="contert.html"><span class="glyphicon glyphicon-book"></span>&nbsp;内容管理</a></li>
+						<li><a href="tag.html"><span class="glyphicon glyphicon-tag"></span>&nbsp;标签管理</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+						  <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="glyphicon glyphicon-off"></span>admin
+							<span class="caret"></span>
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="dLabel">
+							<li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;前台首页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;个人主页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;个人设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;账号中心</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;我的收藏</a></li>
+						  </ul>
+						</li>
+						<li><a href="#td">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<!-- 类似于文章的模块 -->
+					<div class="list-group">
+						<!-- active选中状态 -->
+						<a href="user.html" class="list-group-item">用户管理</a>
+						<a href="userso.html" class="list-group-item active">用户搜索</a>
+						<a role="button" data-toggle="modal" data-target="#myModal" class="list-group-item">添加用户</a>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<!-- header标题 -->
+					<div class="page-header"><h1>用户搜索</h1></div>
+					<ul class="nav nav-tabs">
+						<li>
+							<a href="user.html">用户管理</a>
+						</li>
+						<li class="active">
+							<a href="userso.html">用户搜索</a>
+						</li>
+						<li>
+							<a role="button" data-toggle="modal" data-target="#myModal">添加用户</a>
+						</li>
+					</ul>
+					<form class="soForm" action="#" method="post">
+						<div class="alert alert-info" role="alert">
+							<strong>技巧提示：</strong>
+							<span>支持全局搜索和模糊搜索还有匹配搜索，匹配搜索可以用*代替！</span>
+						</div>
+						<!-- form表单的基本样式 -->
+						<div class="form-group">
+							<label for="name">用户名</label>
+							<!-- form里的样式都以form开头，form-control是内容 -->
+							<input type="text" name="用户名" id="name" class="form-control" placeholder="请输入用户名">
+							<label for="Uid">UID</label>
+							<!-- form里的样式都以form开头，form-control是内容 -->
+							<input type="text" name="UID" id="Uid" class="form-control" placeholder="用户ID">
+							<label for="Emily">电子邮箱</label>
+							<!-- form里的样式都以form开头，form-control是内容 -->
+							<input type="text" name="Emily" id="Emily" class="form-control" placeholder="请输入电子邮箱">
+							<label for="zu">用户组</label>
+							<!-- form里的样式都以form开头，form-control是内容 -->
+							<select name="name_yh" class="form-control" id="name_yh">
+								<option value="新手上路"><a href="#">新手上路</a></option>
+								<option value="注册会员"><a href="#">注册会员</a></option>
+								<option value="登录会员"><a href="#">登录会员</a></option>
+								<option value="高级会员"><a href="#">高级会员</a></option>
+								<option value="至尊会员"><a href="#">至尊会员</a></option>
+							</select>
+							<button class="btn btn-danger sobtn">搜索</button>
+						</div>
+					</form>	
+				</div>
+			</div>
+		</div>
+		<!-- 弹出框 -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">添加用户</h4>
+					</div>
+				<div class="modal-body">
+		        <form action="#" method="post">
+					<div class="form-group tj_div">
+						<label>用户名</label>
+						<input class="form-control" type="text" name="name_tj" id="name_tj" placeholder="输入用户名"/>
+						<label>密码</label>
+						<input class="form-control" type="password" name="pass_tj" id="pass_tj" placeholder="输入用户密码"/>
+						<label>电子邮箱</label>
+						<input class="form-control" type="text" name="emil_tj" id="emil_tj" placeholder="输入电子邮箱"/>
+						<label for="zu">选择用户组</label>
+						<!-- form里的样式都以form开头，form-control是内容 -->
+						<select name="name_yh" class="form-control" id="name_yh">
+							<option value="新手上路"><a href="#">新手上路</a></option>
+							<option value="注册会员"><a href="#">注册会员</a></option>
+							<option value="登录会员"><a href="#">登录会员</a></option>
+							<option value="高级会员"><a href="#">高级会员</a></option>
+							<option value="至尊会员"><a href="#">至尊会员</a></option>
+						</select>
+					</div>
+				</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" id="btn_tj">提交</button>
+				</div>
+		    </div>
+		  </div>
+		</div>
+		<footr>
+			<div class="container">
+				<div class="col-md-12">
+					<p>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2020&nbsp;远道 97470564</p>
+				</div>
+			</div>
+		</footr>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquer.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

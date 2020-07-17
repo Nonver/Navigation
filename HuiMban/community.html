@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>科学社区</title>
+		<link rel="stylesheet" type="text/css" href="css/hui.css" />
+		<link href="font/iconfont.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/new.css" />
+		<style type="text/css">
+			.fonPteet {
+				position: relative;
+				top: -115px;
+				left: 80px;
+				color: #3a3838;
+				font-size: 15px;
+				font-family: cursive;
+			}
+		</style>
+	</head>
+	<body style="background: #FFFFFF;">
+		<!-- top -->
+		<header class="hui-header">
+			<h1>社区</h1>
+		</header>
+		<!-- 轮播 -->
+		<div class="hui-wrap" style="padding-top: 0px;">
+			<div style="padding-top:44px;">
+				<div class="hui-swipe" id="swipe">
+					<div class="hui-swipe-items">
+						<div class="hui-swipe-item"><img src="img/1.jpg" /></div>
+						<div class="hui-swipe-item"><img src="img/2.jpg" /></div>
+						<div class="hui-swipe-item"><img src="img/3.jpg" /></div>
+						<div class="hui-swipe-item"><img src="img/1.jpg" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 社区模块 -->
+		<div class="hui-accordion">
+			<div class="hui-accordion-title">娱乐区</div>
+			<div class="hui-accordion-content">
+				<div class="hui-flex">
+					<div class="demo">
+						<div class="hui-media-list-img"><img src="img/common_48_icon.png" class="icoImg" /></div>
+						<p class="fonPteet">悬赏交易</p>
+						<span class="em">888</span>
+					</div>
+					<div class="demo">
+						<div class="hui-media-list-img"><img src="img/common_47_icon.png" class="icoImg" /></div>
+						<p class="fonPteet">悬赏交易</p>
+						<span class="em">888</span>
+					</div>
+				</div>
+				<div class="hui-flex">
+					<div class="demo">
+						<div class="hui-media-list-img"><img src="img/common_75_icon.jpg" class="icoImg" /></div>
+						<p class="fonPteet">活动互助</p>
+						<span class="em">888</span>
+					</div>
+					<div class="demo">
+						<div class="hui-media-list-img"><img src="img/common_46_icon.png" class="icoImg" /></div>
+						<p class="fonPteet">交易出售</p>
+						<span class="em">888</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hui-accordion">
+			<div class="hui-accordion-title">科学区</div>
+			<div class="hui-accordion-content">
+				<div class="hui-flex">
+					<div class="demo">
+						<div class="hui-media-list-img"><img src="img/common_75_icon.jpg" class="icoImg" /></div>
+						<p class="fonPteet">活动互助</p>
+						<span class="em">888</span>
+					</div>
+					<div class="demo">
+						<div class="hui-media-list-img"><img src="img/common_46_icon.png" class="icoImg" /></div>
+						<p class="fonPteet">交易出售</p>
+						<span class="em">888</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hui-accordion">
+			<div class="hui-accordion-title">运营区</div>
+			<div class="hui-accordion-content">
+				<div>
+					<div class="demo2">
+						<div class="hui-media-list-img"><img src="img/common_40_icon.png" class="icoImg" /></div>
+						<p class="fonPteer">社区公告</p>
+					</div>
+					<div class="demo2">
+						<div class="hui-media-list-img"><img src="img/common_41_icon.png" class="icoImg" /></div>
+						<p class="fonPteer">曝光举报</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!-- 底部导航 -->
+		<div class="hui-wrap">
+		</div>
+		<div id="hui-footer">
+			<a href="index.html" id="nav-home">
+				<div class="hui-footer-icons hui-icons-home"></div>
+				<div class="hui-footer-text">首页</div>
+			</a>
+			<a href="Journalism.html" id="nav-news">
+				<div class="hui-footer-icons hui-icons-news"></div>
+				<div class="hui-footer-text">新闻</div>
+			</a>
+			<div style="width:20%; text-align:center;" class="hui-fl">
+				<img src="img/logo_footer.png" height="44" onclick="hui.back();" />
+			</div>
+			<a href="javascript:hui.toast('社区');" id="nav-forum">
+				<div class="hui-footer-icons hui-icons-forum" style="color: #3388FF;"></div>
+				<div class="hui-footer-text" style="color: #3388FF;">社区</div>
+			</a>
+			<a href="my.html" id="nav-my">
+				<div class="hui-footer-icons hui-icons-my"></div>
+				<div class="hui-footer-text">我的</div>
+			</a>
+		</div>
+		<script src="js/hui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hui-swipe.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/hui-accordion.js"></script>
+		<script type="text/javascript">
+			var swipe = new huiSwpie('#swipe');
+			swipe.autoPlay = true;
+			swipe.run();
+			hui.lazyLoad();
+			hui.accordion(true, true);
+		</script>
+	</body>
+</html>

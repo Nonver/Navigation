@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>科学社区</title>
+		<link rel="stylesheet" type="text/css" href="css/hui.css" />
+		<link href="font/iconfont.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/new.css" />
+		<style type="text/css">
+			body {
+				background: #FFF;
+			}
+
+			.line {
+				height: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- top -->
+		<header class="hui-header">
+			<h1>科学社区</h1>
+		</header>
+		<!-- 轮播 -->
+		<div class="hui-wrap" style="padding-top: 0px;">
+			<div style="padding-top:44px;">
+				<div class="hui-swipe" id="swipe">
+					<div class="hui-swipe-items">
+						<div class="hui-swipe-item"><img src="img/1.jpg" /></div>
+						<div class="hui-swipe-item"><img src="img/2.jpg" /></div>
+						<div class="hui-swipe-item"><img src="img/3.jpg" /></div>
+						<div class="hui-swipe-item"><img src="img/1.jpg" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 商品 -->
+		<div class="hui-common-title" style="margin-top:15px;">
+			<div class="hui-common-title-line"></div>
+			<div class="hui-common-title-txt">热门话题</div>
+			<div class="hui-common-title-line"></div>
+		</div>
+		<div class="hui-img-list" id="list2" style="padding-top: 10px;">
+			<ul>
+				<li>
+					<a href="javascript:hui.toast('hi...');">
+						<img lazySrc="img/1.jpg" src="img/2.jpg" class="hui-lazy" />
+						<div class="hui-img-list-content">
+							<h1>标题 </h1>
+							<p>power by hcoder.net</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:hui.toast('hi...');">
+						<img lazySrc="img/2.jpg" src="img/2.jpg" class="hui-lazy" />
+						<div class="hui-img-list-content">
+							<h1>标题 </h1>
+							<p>power by hcoder.net</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:hui.toast('hi...');">
+						<img lazySrc="img/2.jpg" src="img/2.jpg" class="hui-lazy" />
+						<div class="hui-img-list-content">
+							<h1>标题</h1>
+							<p>power by hcoder.net</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:hui.toast('hi...');">
+						<img lazySrc="img/4.jpg" src="img/1.jpg" class="hui-lazy" />
+						<div class="hui-img-list-content">
+							<h1>标题</h1>
+							<p>power by hcoder.net</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:hui.toast('hi...');">
+						<img lazySrc="img/4.jpg" src="img/1.jpg" class="hui-lazy" />
+						<div class="hui-img-list-content">
+							<h1>标题</h1>
+							<p>power by hcoder.net</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<!-- 底部导航 -->
+		<div class="hui-wrap">
+			<div class="hui-common-title" style="margin-top:15px;">
+				<div class="hui-common-title-line"></div>
+				<div class="hui-common-title-line"></div>
+			</div>
+		</div>
+		<div id="hui-footer">
+			<a href="javascript:hui.back();" id="nav-home">
+				<div class="hui-footer-icons hui-icons-home" style="color: #3388FF;"></div>
+				<div class="hui-footer-text" style="color: #3388FF;">首页</div>
+			</a>
+			<a href="Journalism.html" id="nav-news">
+				<div class="hui-footer-icons hui-icons-news"></div>
+				<div class="hui-footer-text">新闻</div>
+			</a>
+			<div style="width:20%; text-align:center;" class="hui-fl">
+				<img src="img/logo_footer.png" height="44" onclick="hui.back();" />
+			</div>
+			<a href="community.html" id="nav-forum">
+				<div class="hui-footer-icons hui-icons-forum"></div>
+				<div class="hui-footer-text">社区</div>
+			</a>
+			<a href="my.html" id="nav-my">
+				<div class="hui-footer-icons hui-icons-my"></div>
+				<div class="hui-footer-text">我的</div>
+			</a>
+		</div>
+		<script src="js/hui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hui-swipe.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var swipe = new huiSwpie('#swipe');
+			swipe.autoPlay = true;
+			swipe.run();
+			hui.lazyLoad();
+		</script>
+	</body>
+</html>

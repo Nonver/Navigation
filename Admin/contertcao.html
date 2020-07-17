@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Admin 文章管理</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">Amdin 文章管理</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+						<li><a href="user.html"><span class="glyphicon glyphicon-user"></span>&nbsp;用户管理</a></li>
+						<li class="active"><a href="contert.html"><span class="glyphicon glyphicon-book"></span>&nbsp;内容管理</a></li>
+						<li><a href="tag.html"><span class="glyphicon glyphicon-tag"></span>&nbsp;标签管理</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+						  <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="glyphicon glyphicon-off"></span>admin
+							<span class="caret"></span>
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="dLabel">
+							<li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;前台首页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;个人主页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;个人设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;账号中心</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;我的收藏</a></li>
+						  </ul>
+						</li>
+						<li><a href="#td">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<!-- 类似于文章的模块 -->
+					<div class="list-group">
+						<!-- active选中状态 -->
+						<a href="contert.html" class="list-group-item">文章管理</a>
+						<a href="contertcao.html" class="list-group-item active">文章草稿</a>
+						<a role="button" class="list-group-item" data-toggle="modal" data-target="#myModal">添加文章</a>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<!-- header标题 -->
+					<div class="page-header"><h1>文章列表</h1></div>
+					<ul class="nav nav-tabs">
+						<li>
+							<a href="contert.html">文章管理</a>
+						</li>
+						<li class="active">
+							<a href="contertcao.html" class="active">文章草稿</a>
+						</li>
+						<li>
+							<a role="button" data-toggle="modal" data-target="#myModal">添加文章</a>
+						</li>
+					</ul>
+					<table class="table">
+						<!-- thead标题 -->
+						<thead>
+							<tr>
+								<th>文章标题</th>
+								<th>作者</th>
+								<th>保存时间</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<!-- tbody内容主体 -->
+						<tbody id="tbody_cgnr">
+							<tr>
+								<th scope="row" class="nr">
+									我是标题
+								</th>
+								<td>远道</td>
+								<td>2020/2/25</td>
+								<td>
+									<div role="presentation" class="dropdown">
+									    <button class="btn btn-default dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									      操作<span class="caret"></span>
+									    </button>
+									    <ul class="dropdown-menu">
+											<li><a href="#">删除</a></li>
+											<li><a href="#">修改</a></li>
+											<li><a href="#" class="fb">发布</a></li>
+									    </ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" class="nr">
+									我是标题
+								</th>
+								<td>远道</td>
+								<td>2020/2/25</td>
+								<td>
+									<div role="presentation" class="dropdown">
+									    <button class="btn btn-default dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									      操作<span class="caret"></span>
+									    </button>
+									    <ul class="dropdown-menu">
+											<li><a href="#">删除</a></li>
+											<li><a href="#">修改</a></li>
+											<li><a href="#" class="fb">发布</a></li>
+									    </ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" class="nr">
+									我是标题
+								</th>
+								<td>远道</td>
+								<td>2020/2/25</td>
+								<td>
+									<div role="presentation" class="dropdown">
+									    <button class="btn btn-default dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									      操作<span class="caret"></span>
+									    </button>
+									    <ul class="dropdown-menu">
+											<li><a href="#">删除</a></li>
+											<li><a href="#">修改</a></li>
+											<li><a href="#" class="fb">发布</a></li>
+									    </ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" class="nr">
+									我是标题
+								</th>
+								<td>远道</td>
+								<td>2020/2/25</td>
+								<td>
+									<div role="presentation" class="dropdown">
+									    <button class="btn btn-default dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									      操作<span class="caret"></span>
+									    </button>
+									    <ul class="dropdown-menu">
+											<li><a href="#">删除</a></li>
+											<li><a href="#">修改</a></li>
+											<li><a href="#" class="fb">发布</a></li>
+									    </ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" class="nr">
+									我是标题
+								</th>
+								<td>远道</td>
+								<td>2020/2/25</td>
+								<td>
+									<div role="presentation" class="dropdown">
+									    <button class="btn btn-default dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									      操作<span class="caret"></span>
+									    </button>
+									    <ul class="dropdown-menu">
+											<li><a href="#">删除</a></li>
+											<li><a href="#">修改</a></li>
+											<li><a href="#" class="fb">发布</a></li>
+									    </ul>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- 分页 -->
+					<nav aria-label="Page navigation" class="text-right">
+					  <ul class="pagination">
+					    <li>
+					      <a href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li class="active"><a href="#" >1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- 弹出框 -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">添加文章</h4>
+					</div>
+				<div class="modal-body">
+		        <form action="#" method="post">
+					<div class="form-group tj_div">
+						<label>标题</label>
+						<input class="form-control" type="text" name="name_tj" id="name_tj" placeholder="标题"/>
+						<label>文章内容</label>
+						<textarea id="textfb" rows="5" cols="10" class="form-control"></textarea>
+					</div>
+				</form>
+				</div>
+				<div class="modal-footer">
+					<button id="btn_cg" type="button" class="btn btn-default">保存草稿</button>
+					<button id="btn_fb" type="button" class="btn btn-primary">发布</button>
+				</div>
+		    </div>
+		  </div>
+		</div>
+		<footr>
+			<div class="container">
+				<div class="col-md-12">
+					<p>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2020&nbsp;远道 97470564</p>
+				</div>
+			</div>
+		</footr>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquer.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,107 @@
+/* 进度条 */
+@media screen and (min-width: 755px) {
+#tjb{
+	margin-top:0px;
+	}
+
+}
+
+/* 用户id */
+
+.uid{
+	margin-top: 5px;
+}
+
+.progress{
+	margin-bottom: 12px;
+}
+
+.media img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+/* 昵称的margin */
+.media-heading{
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+
+
+/* 留言按钮 */
+.b15{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+
+footr{
+	text-align: center;
+}
+
+.sc{
+	margin-left: 86%;
+}
+
+#button{
+	cursor: pointer;
+}
+
+
+/* user用户管理页面 */
+
+.page-header{
+	margin-top: 0;
+}
+
+.page-header h1{
+	font-size: 16px;
+}
+
+td{
+	color: gray;
+}
+
+.sobtn{
+	margin-top: 15px;
+}
+
+.soForm{
+	padding: 10px;
+	border: solid 1px #ddd;
+	border-top: none;
+}
+
+.table{
+	border: solid 1px #ddd;
+	border-top: none;
+}
+
+/* 添加用户 */
+.tj_div label{
+	margin-top: 5px;
+}
+
+
+/*标签管理*/
+#taglist{
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+.alert{
+	margin: 10px 15px;
+}
+
+#tjb{
+	margin-top:10px;
+}
+
+.glyphicon-off{
+	position: relative;
+    top: 2px;
+    left: -3px;	
+}

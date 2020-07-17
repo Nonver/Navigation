@@ -1,0 +1,212 @@
+.iconrb{
+	display: inline-block;
+	width: 45px;
+	border-radius: 50%;
+	height: 45px;
+	background-color: #6f9acf;
+	text-align: center;
+	line-height: 45px;
+	margin-right: 10px;
+	color: #FFFFFF;
+}
+
+/*导航*/
+.navbar-default{
+	background-color: white;
+	border: none;
+	box-shadow: 0px 2px 8px 0px rgba(50,50,50,0.6);
+}
+
+.navbar-default .navbar-brand{
+	font-size: 25px;
+	font-weight: bold;
+	color: #255625;
+	height: 70px;
+	line-height: 35px;
+}
+
+.navbar-toggle{
+	margin-top: 17px;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: #255625;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #197e19;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: #333;
+	font-size: 18px;
+	height: 70px;
+	line-height: 35px;
+}
+
+#td img{
+	transition: all .5s;
+	transform:rotate(360deg);
+}
+
+#td img:hover{
+	transform:rotate(720deg);
+}
+
+/*home*/
+
+#home{
+	margin-top: 70px;
+	background: url(../img/bg.jpg);
+	/*覆盖*/
+	background-size: cover;
+	text-align: center;
+	color: white;
+	width: 100%;
+}
+
+/* home的滤镜 */
+.filter{
+	width: 100%;
+	height: 100%;
+	background: rgba(50,50,50,0.7);
+	padding: 90px 0;
+	box-shadow: 2px 2px 8px 2px rgba(50,50,50,0.6);
+}
+
+#home h1{
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+#home p{
+	font-size: 15px;
+	line-height: 35px;
+}
+
+#home img{
+	margin-top: 30px;
+	display: inline-block;
+}
+
+/* 我的团队 */
+
+#td{
+	padding: 20px 0;
+	text-align: center;
+}
+
+#td a{
+	text-decoration: none;
+	color: #000000;
+	cursor: pointer;
+}
+
+#td .col-md-4{
+	padding: 15px;
+}
+
+#td img{
+	border: 2px solid #A7CCF1;
+	margin: 30px auto;
+	border-radius: 50%;
+}
+
+#td h3{
+	font-weight: bold;
+}
+
+#td p{
+	color: #666;
+}
+
+/* 前端开发 */
+
+#html{
+	background-color: #f8f8f8;
+	padding: 80px 0;
+}
+
+#html,#html5 p{
+	line-height: 40px;
+}
+
+/*APP页面*/
+#html5{
+	background-color: #FFFFFF;
+	padding: 80px 0;
+}
+
+/*联系我们*/
+
+#lx{
+	padding: 80px 0;
+}
+
+#lx h2{
+	padding-bottom: 10px;
+}
+
+.btn{
+	transition: all .3s;
+}
+
+.btn:hover{
+	background-color: #195b93;
+}
+
+.res{
+	margin: 20px 0;
+}
+
+/*问题反馈*/
+#fk{
+	background: url(../img/control.jpg)no-repeat;
+	color: #ffffff;
+	background-size: cover;
+}
+
+#fk h2{
+	line-height: 25px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+#fk p{
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+#fk .form-control{
+	border: 0;
+	height: 35px;
+	margin-bottom: 20px;
+	outline: none;
+}
+
+#fk textarea.form-control{
+	height: auto;
+}
+
+#fk input[type="submit"]{
+	background: #40D2B1;
+	color: #FFFFFF;
+	font-weight: bold;
+	transition: all .5s;
+}
+
+#fk input[type="submit"]:hover{
+	background: #289b81;
+}
+
+/*底部*/
+footr{
+	font-weight: 500;
+	text-align: center;
+	padding: 10px;
+}
+
+footr p{
+	margin-top: 15px;
+}

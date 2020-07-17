@@ -1,0 +1,18 @@
+.cc{
+	display: flex;
+	/* 定义盒子为flex弹性盒子 */
+	flex-direction: row; 
+	/* row横向 column竖向 column-reverse竖向-倒序*/
+	align-items: center;
+	/* 交叉轴的对齐方式 */
+	justify-content: space-around;
+	/* 主轴的对齐方式 flex-direction: row； row为主轴*/
+	/* center 居中对齐 */
+	/* space-between 贴边对齐，然后平均分配空间 */
+	/* space-around 以内容的边了计算分配对齐 */
+}
+
+.ca{
+	flex: 1;
+	/* 剩余空间都给.ca */
+}

@@ -1,0 +1,25 @@
+.type {
+	padding-left: 3px;
+}
+
+.btn_div {
+	float: right;
+	position: relative;
+	left: -195px;
+}
+
+.btn_div button {
+	height: 30px;
+}
+
+.Commodity,.number{
+	height: 30px;
+}
+
+.hang{
+	line-height: 39px;
+}
+
+.sp_btn span{
+	cursor: pointer;
+}
